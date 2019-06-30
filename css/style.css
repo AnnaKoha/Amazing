@@ -10,12 +10,14 @@ h1{
 }
 h2{
     font-size: 24px;
+    text-transform: uppercase;
 }
 
 .head p{
     font-size: 30px;
 }
-main p{
+
+p{
     font-size: 36px;
 }
 .btn{
@@ -27,6 +29,17 @@ main p{
     border-radius: 30px;
     padding: 10px 10px;
 }
+
+.btn:hover {color:#0000FF} 
+.btn:active {color:#0000FF} 
+
+.itunes h2{
+    margin-top: 134px;
+    margin-left: 62px;
+    letter-spacing: -0.5px;
+}
+
+
 
 .grid{
     display:grid;
