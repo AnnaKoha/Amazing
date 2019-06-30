@@ -1,0 +1,104 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+}
+
+
+
+h1{
+    font-size: 72px;
+}
+h2{
+    font-size: 24px;
+}
+
+.head p{
+    font-size: 30px;
+}
+main p{
+    font-size: 36px;
+}
+.btn{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border: #ffffff 2px solid;
+    border-radius: 30px;
+    padding: 10px 10px;
+}
+
+.grid{
+    display:grid;
+    grid-template-areas: "a a a a"  "b b c c" "d e f g" "h h i j" "k k l l";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 900px  515px 515px 515px 515px;
+    
+}
+.grid-item{
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:block;
+
+}
+
+.head{
+    background-image: url(../img/header.png);
+
+    grid-area: a;
+    color: #000000;
+}
+
+.first-block-img{
+    background-image: url(../img/slide_1_red.png);
+
+    grid-area: b;
+}
+.first-block-text{
+    grid-area: c;
+    background-color:#f3f1ef;
+    color:#666666;
+}
+.pictures-first
+{
+    background-image: url(../img/THUMBNAIL.png);
+     grid-area: d;
+}
+.pictures-second{
+    background-image: url(../img/THUMBNAIL-1.png);
+    grid-area: e;
+}
+
+.pictures-third{
+    background-image: url(../img/THUMBNAIL-2.png);
+    grid-area: f;
+}
+
+.pictures-fourth{
+    background-image: url(../img/THUMBNAIL-3.png);
+    grid-area: g;
+}
+.social-text{
+    grid-area: h; 
+    background-color: #3f729b;
+    color: #ffffff;
+}
+
+.social-img{
+    background-image: url(../img/THUMBNAIL-4.png);
+    grid-area: i;
+}
+.social-block-blue{
+    grid-area: j;
+    background-color: #3f729b;
+}
+.follow{
+    grid-area: k;
+    background-color: #2ebd59;
+    color: #ffffff
+}
+.itunes{
+    grid-area: l;
+    background-color: #282b2f;
+    color: #ffffff;
+}
