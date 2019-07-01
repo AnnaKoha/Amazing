@@ -1,25 +1,99 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    font-weight:400;
+    font-weight:700;
 }
-
-
 
 h1{
     font-size: 72px;
+    margin-top: 272px;
+    margin-left: 209px;
+    letter-spacing: -1.9px;
+    line-height: 87.5px;
+    margin-bottom: 0px;
+    
 }
-h2{
-    font-size: 24px;
-    text-transform: uppercase;
-}
-
-.head p{
+.head__text{
     font-size: 30px;
+    max-width: 598px;
+    margin-left: 202px;
+    margin-top: 30px;
+    line-height: 44px;
+    letter-spacing: -2.1px;
+}
+.h2{
+    font-weight:500;
+    text-transform: uppercase; 
+    font-size: 24px;
+}
+.first-block-text h2{
+    margin-top: 84px;
+    margin-left: 56px;
+    letter-spacing: -0.5px;
+    margin-bottom: 0px;
 }
 
-p{
+.first-block-text p{
     font-size: 36px;
+    max-width: 565px;
+    margin-left: 57px;
+    margin-top: 0px;
+    line-height: 44px;
+    letter-spacing: -2.1px;
 }
+.social-text__box{
+    margin-left: 205px;
+    margin-top: 116px;
+}
+.social-text h2{
+
+    letter-spacing: -0.9px;
+  
+}
+.social-text p{
+    font-size: 36px;
+    max-width: 508px;
+    margin-top: 30px;
+    line-height: 44px;
+    letter-spacing: -2.1px;
+    margin-bottom: 51px;
+}
+
+.follow__box{
+    margin-left: 205px;
+    margin-top: 116px;
+}
+
+.itunes__box{
+    margin-left: 63px;
+    margin-top: 116px;
+}
+.follow__box h2{
+    letter-spacing: -0.9px;
+}
+
+.follow__box  p{
+    font-size: 36px;
+    max-width: 508px;
+    margin-top: 30px;
+    line-height: 44px;
+    letter-spacing: -2.1px;
+    margin-bottom: 51px;
+}
+.itunes__box p{
+    font-size: 36px;
+    max-width: 508px;
+    margin-top: 30px;
+    line-height: 44px;
+    letter-spacing: -2.1px;
+    margin-bottom: 51px;
+}
+.follow__box .btn{
+    padding: 14px 47px;  
+}
+.itunes__box .btn{
+    padding: 14px 49px;  
+}
+
 .btn{
     font-size: 18px;
     text-transform: uppercase;
@@ -27,28 +101,52 @@ p{
     color: #ffffff;
     border: #ffffff 2px solid;
     border-radius: 30px;
-    padding: 10px 10px;
+    padding: 14px 54px;
 }
+
+
 
 .btn:hover {color:#0000FF} 
 .btn:active {color:#0000FF} 
 
 .itunes h2{
-    margin-top: 134px;
-    margin-left: 62px;
+    
     letter-spacing: -0.5px;
 }
 
 
+@media only screen and (min-width : 1224px) {
 
+    .grid{
+        display:grid;
+        grid-template-areas: "a a a a"  "b b c c" "d e f g" "h h i j" "k k l l";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 900px  repeat(4, minmax(515px, 1fr)) ;
+      
+        
+    }
 
-.grid{
-    display:grid;
-    grid-template-areas: "a a a a"  "b b c c" "d e f g" "h h i j" "k k l l";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 900px  515px 515px 515px 515px;
-    
+  
 }
+
+
+
+@media only screen and (min-width : 768px) and (max-width : 1224px) {
+    .grid{
+        display:grid;
+        grid-template-areas: "a a"  "b c" "d e" "f g" "h i" "k l";
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: 900px  repeat(5, 515px) ;
+ 
+    }
+  
+}
+
+@media only screen and (max-width : 768px) {
+   
+}
+
+
 .grid-item{
     background-repeat: no-repeat;
     background-size:cover;
@@ -65,7 +163,6 @@ p{
 
 .first-block-img{
     background-image: url(../img/slide_1_red.png);
-
     grid-area: b;
 }
 .first-block-text{
