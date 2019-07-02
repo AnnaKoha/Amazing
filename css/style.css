@@ -2,11 +2,12 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight:700;
 }
-
+.head__box{
+    margin-left: 209px;
+    margin-top: 272px;
+}
 h1{
     font-size: 72px;
-    margin-top: 272px;
-    margin-left: 209px;
     letter-spacing: -1.9px;
     line-height: 87.5px;
     margin-bottom: 0px;
@@ -15,10 +16,13 @@ h1{
 .head__text{
     font-size: 30px;
     max-width: 598px;
-    margin-left: 202px;
     margin-top: 30px;
     line-height: 44px;
     letter-spacing: -2.1px;
+}
+.first-block__box{
+    margin-left: 56px;
+    margin-top: 84px;
 }
 .h2{
     font-weight:500;
@@ -26,8 +30,6 @@ h1{
     font-size: 24px;
 }
 .first-block-text h2{
-    margin-top: 84px;
-    margin-left: 56px;
     letter-spacing: -0.5px;
     margin-bottom: 0px;
 }
@@ -35,8 +37,7 @@ h1{
 .first-block-text p{
     font-size: 36px;
     max-width: 565px;
-    margin-left: 57px;
-    margin-top: 0px;
+    margin-top: 30px;
     line-height: 44px;
     letter-spacing: -2.1px;
 }
@@ -122,7 +123,6 @@ h1{
         grid-template-areas: "a a a a"  "b b c c" "d e f g" "h h i j" "k k l l";
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 900px  repeat(4, minmax(515px, 1fr)) ;
-      
         
     }
 
@@ -135,15 +135,65 @@ h1{
     .grid{
         display:grid;
         grid-template-areas: "a a"  "b c" "d e" "f g" "h i" "k l";
-        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 900px  repeat(5, 515px) ;
  
     }
   
 }
 
-@media only screen and (max-width : 768px) {
-   
+@media only screen and (max-width : 767px) {
+    .grid{
+        display: grid;
+        grid-template-areas: "a"  "c" "h" "k" "l";
+        grid-template-columns: 100%;
+  
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    .btn{
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border: #ffffff 2px solid;
+    border-radius: 30px;
+    padding: 10px 10px; 
+    }
+
+    .follow__box .btn{
+        padding: 10px 10px;  
+    }
+    .itunes__box{
+        padding-bottom: 100px;
+    }
+    .itunes__box .btn{
+        padding: 10px 10px;  
+       
+    }
+    .follow__box{
+        margin-left: 63px;
+        margin-top: 116px;
+        padding-bottom: 100px;
+    }
+    .first-block__box{
+        margin-left: 63px;
+        margin-top: 116px;
+        padding-bottom: 100px;
+    }
+    .head__box{
+        margin-left: 63px;
+        margin-top: 116px;
+        padding-bottom: 100px;
+    }
+    .social-text__box{
+        margin-left: 63px;
+        margin-top: 116px;
+        padding-bottom: 100px;
+    }
 }
 
 
