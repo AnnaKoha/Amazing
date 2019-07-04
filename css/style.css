@@ -1,6 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    font-weight:700;
+    font-weight:600;
 }
 .head__box{
     margin-left: 209px;
@@ -62,7 +62,7 @@ h1{
 .follow__box{
     margin-left: 205px;
     margin-top: 116px;
-}
+   }
 
 .itunes__box{
     margin-left: 63px;
@@ -116,7 +116,7 @@ h1{
 }
 
 
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1300px) {
 
     .grid{
         display:grid;
@@ -126,30 +126,19 @@ h1{
         
     }
 
-  
-}
 
-
-
-@media only screen and (min-width : 768px) and (max-width : 1224px) {
-    .grid{
-        display:grid;
-        grid-template-areas: "a a"  "b c" "d e" "f g" "h i" "k l";
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 900px  repeat(5, 515px) ;
  
-    }
-  
-}
+ }
 
-@media only screen and (max-width : 767px) {
+
+
+
+@media only screen and (max-width : 1300px) {
     .grid{
         display: grid;
         grid-template-areas: "a"  "c" "h" "k" "l";
         grid-template-columns: 100%;
-  
-    }
-
+      }
     h1{
         font-size: 32px;
     }
@@ -165,10 +154,12 @@ h1{
     }
 
     .follow__box .btn{
-        padding: 10px 10px;  
+        padding: 10px 10px; 
+ 
     }
     .itunes__box{
         padding-bottom: 100px;
+        max-width: 80%; 
     }
     .itunes__box .btn{
         padding: 10px 10px;  
@@ -178,21 +169,25 @@ h1{
         margin-left: 63px;
         margin-top: 116px;
         padding-bottom: 100px;
+        max-width: 80%; 
     }
     .first-block__box{
         margin-left: 63px;
         margin-top: 116px;
         padding-bottom: 100px;
+        max-width: 80%; 
     }
     .head__box{
         margin-left: 63px;
         margin-top: 116px;
         padding-bottom: 100px;
+        max-width: 80%; 
     }
     .social-text__box{
         margin-left: 63px;
         margin-top: 116px;
         padding-bottom: 100px;
+        max-width: 80%; 
     }
 }
 
@@ -256,7 +251,7 @@ h1{
 .follow{
     grid-area: k;
     background-color: #2ebd59;
-    color: #ffffff
+    color: #ffffff;
 }
 .itunes{
     grid-area: l;
